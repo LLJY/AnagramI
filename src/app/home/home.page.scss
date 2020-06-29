@@ -1,27 +1,37 @@
-#container {
+@import '../../../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+$side-padding : 10px;
+.anagram-input{
+ width: 100%;
+ padding-left: $side-padding;
+ padding-right: $side-padding;
+ padding-top: 12%;
+}
+.button-container{
+  margin: auto;
+  width: 80%;
+  padding: 0px;
+  height: 56px;
+}
+.button{
+  width: 45%;
+  height: 100%;
+  margin:0 1.5;
+  padding: 10px;
+}
+.random-button{
+  @extend .button;
+  float: left;
+}
+.generate-button{
+  @extend .button;
+  float: right;
+}
+.text-container{
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+mat-spinner{
+  margin: auto;
+  width: 2%;
+  padding: 0px;
+  height:2%;
 }
